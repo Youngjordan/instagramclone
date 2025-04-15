@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-stack img {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  animation: fade 5s infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.form-section {
+  flex: 1;
+  max-width: 350px;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #000; /* Set background to black */
+  color: #fff; /* Set text color to white */
+}
+
+button {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #0095f6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.facebook-login {
+  background-color: #4267b2;
+}
+
+.divider {
+  margin: 10px 0;
+  color: #aaa;
+}
+
+a {
+  color: #0095f6;
+  text-decoration: none;
+}
+
+.signup {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image-section {
+    display: none;
+  }
+}

